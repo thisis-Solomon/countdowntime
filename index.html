@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="index.css" />
-        <title>Count Down</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Coming Soon !</h1>
-            <div class="count_timer">
-                <div>
-                    <h2 class="days">Day</h2>
-                    <p>Day</p>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-                <div>
-                    <h2 class="hours">Day</h2>
-                    <p>Hours</p>
-                </div>
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Launch countdown timer</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>We're launching soon</h1>
+        <div class="count_timer">
+          <div>
+            <h2 class="days">Day</h2>
+            <p>Day</p>
+          </div>
 
-                <div>
-                    <h2 class="minutes">Day</h2>
-                    <p>Minutes</p>
-                </div>
+          <div>
+            <h2 class="hours">Day</h2>
+            <p>Hours</p>
+          </div>
 
-                <div>
-                    <h2 class="seconds">Day</h2>
-                    <p>Seconds</p>
-                </div>
-            </div>
+          <div>
+            <h2 class="minutes">Day</h2>
+            <p>Minutes</p>
+          </div>
+
+          <div>
+            <h2 class="seconds">Day</h2>
+            <p>Seconds</p>
+          </div>
         </div>
-        <script src="./App.js"></script>
-    </body>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
