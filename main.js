@@ -1,5 +1,5 @@
 const countDown = () => {
-  const getDate = new Date("28 March, 2022 00:00:00").getTime();
+  const getDate = new Date("31 December, 2024 00:00:00").getTime();
   const currentDate = new Date().getTime();
   const dateDiffernce = getDate - currentDate;
 
@@ -15,7 +15,7 @@ const countDown = () => {
   const textMinute = Math.floor((dateDiffernce % hour) / minute);
   const textSecond = Math.floor((dateDiffernce % minute) / second);
 
-  document.querySelector(".days").textContent = textDay;
+  document.getElementById("days").textContent = textDay;
   document.querySelector(".hours").textContent = textHour;
   document.querySelector(".minutes").textContent = textMinute;
   document.querySelector(".seconds").textContent = textSecond;

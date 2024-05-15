@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,39 +23,47 @@
       }
     </style>
   </head>
-  <body>
-    <div id="app">
-      <div class="container">
-        <h1>We're launching soon</h1>
-        <div class="count_timer">
-          <div>
-            <h2 class="days">Day</h2>
-            <p>Day</p>
+  <body class=" h-screen">
+    <div id="app" class="flex flex-col justify-center items-center">
+      <h1 class="text-2xl uppercase tracking-widest mb-16 mt-16">
+        We're launching soon
+      </h1>
+      <div class="flex gap-x-14">
+        <div class="flex flex-col items-center">
+            <div
+            class="flex justify-center overflow-hidden items-center text-6xl w-36 min-h-32 bg-Grayishblue tracking-wider rounded-md relative before:absolute before:w-36 before:bottom-0 before:rounded-b-md shadow-lg before:shadow-md before:shadow-gray-800/45 before:right-0 before:h-16 before:bg-Grayishblue before:border-t-2 before:border-neutral-500/55 mb-5"
+            >
+            <h2 id="days" class="z-10 text-Softred">Day</h2>
+            <span class="absolute bg-slate-600 w-3 h-3 rounded-full -left-1">
+            <span class="absolute bg-slate-600 w-3 h-3 rounded-full -right-[1170%]">
           </div>
+          <p class="text-2xl uppercase tracking-widest">Days</p>
+        </div>
 
-          <div>
-            <h2 class="hours">Day</h2>
-            <p>Hours</p>
-          </div>
+        <div>
+          <h2 class="hours">Day</h2>
+          <p>Hours</p>
+        </div>
 
-          <div>
-            <h2 class="minutes">Day</h2>
-            <p>Minutes</p>
-          </div>
+        <div>
+          <h2 class="minutes">Day</h2>
+          <p>Minutes</p>
+        </div>
 
-          <div>
-            <h2 class="seconds">Day</h2>
-            <p>Seconds</p>
-          </div>
+        <div>
+          <h2 class="seconds">Day</h2>
+          <p>Seconds</p>
         </div>
       </div>
     </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer class="h-48 absolute w-full bottom-0">
+        <div class="attribution absolute bottom-3 translate-x-[200%]">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
