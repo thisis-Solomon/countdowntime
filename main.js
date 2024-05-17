@@ -16,9 +16,9 @@ const countDown = () => {
   const textSecond = Math.floor((dateDiffernce % minute) / second);
 
   document.getElementById("days").textContent = textDay;
-  document.querySelector(".hours").textContent = textHour;
-  document.querySelector(".minutes").textContent = textMinute;
-  document.querySelector(".seconds").textContent = textSecond;
+  document.getElementById("hours").textContent = textHour;
+  document.getElementById("minutes").textContent = textMinute;
+  document.getElementById("seconds").textContent = textSecond;
 };
 
 setInterval(countDown, 100);
